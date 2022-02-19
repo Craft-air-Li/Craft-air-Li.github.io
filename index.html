@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOMENTUM</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.momentumww.com/wp-content/uploads/2020/08/Momentum-M-Branding-centered.png"
+    />
+  </head>
+  <body>
+    <div class="weather hidden">
+      <div class="weather__column">
+        <span class="weather__degree"></span>
+      </div>
+      <span class="weather__city-name"></span>
+    </div>
+    <div class="clock hidden">
+      <h1 class="clock__bar">00:00</h1>
+    </div>
+    <div class="login-page">
+      <h1 class="login-page__welcome-text small">Hello, what's your name?</h1>
+      <form class="login-page__input-form hidden">
+        <input class="login-page__input-form__input" required type="text" />
+      </form>
+    </div>
+    <div class="quotes hidden">
+      <span class="quotes__text"></span>
+      <span class="quotes__author"></span>
+    </div>
+    <div class="todo hidden">
+      <div class="todo__box hidden">
+        <span class="todo-title">- To Do list -</span>
+        <form class="todo__box__form">
+          <input type="text" class="todo__box__form__input" required />
+          <button class="todo__box__form__submit">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+          </button>
+        </form>
+        <ul class="todo__box__list"></ul>
+      </div>
+      <div class="todo__btn">
+        <button class="todo__btn__popup">To Do</button>
+      </div>
+    </div>
+    <script src="js/background.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bed121fae5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "reset.css";
+
+body{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body img{
+    position: fixed;
+    width: 1920px;
+    height: 1080px;
+}
+.clock{
+    z-index: 2;
+    margin: 20px;
+}
+.clock__bar{
+    font-size: 150px;
+    color: white;
+}
+.login-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.login-page__welcome-text{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 30px;
+}
+.login-page__input-form{
+    width: 100%;
+}
+.login-page__input-form__input{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border-bottom: 3px solid white;
+}
+.quotes{
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+}
+.quotes__text{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.quotes__author{
+    font-size: 11px;
+}
+.weather{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 15px;
+    color: white;
+}
+.weather__city-name{
+    margin-top: 9px;
+}
+.weather__column{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.weather__column img{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+.weather__degree{
+    margin-left: 60px;
+    font-size: 17px;
+}
+.todo{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.todo__box{
+    background-color: transparent;
+    border: 5px solid snow;
+    width: 300px;
+    height: 400px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.todo-title{
+    margin-top: 10px;
+    font-size: 25px;
+    color: snow;
+    text-align: center;
+}
+.todo__box__form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+.todo__box__form__input{
+    width: 90%;
+    height: 25px;
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid snow;
+}
+.todo__box__form__submit{
+    background-color: transparent;
+    color: snow;
+    font-size: 25px;
+    border: none;
+}
+.todo__btn{
+    margin-top: 20px;
+}
+.todo__btn__popup{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20%/50%;
+    padding: 5px 10px;
+    transition: all 0.5s;
+}
+.todo__btn__popup:hover{
+    box-shadow: 0px 5px 10px snow;
+}
+.todo__box__list{
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+}
+.todo__box__list::-webkit-scrollbar{
+    display: none;
+}
+
+.todo__box__list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.todo__box__list li button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.todo__box__list li button:hover{
+    box-shadow: 0px 5px 5px snow;
+}
+
+.hidden{
+    display: none;
+}
+.small{
+    font-size: 45px;
+}
